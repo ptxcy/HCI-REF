@@ -1,0 +1,35 @@
+.arrow-container {
+    position: fixed; 
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+}
+
+.arrow-container.left {
+    left: 20px;
+    transform: scaleX(-1);
+}
+
+.arrow-container.right {
+    right: 20px;
+}
+
+.arrow-container.up {
+    top: 20px;
+    transform: rotate(90deg);
+    background: rgba(255, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    width: 50px;
+    height: 50px;
+}
+
+.arrow {
+    width: 25px;
+    height: 25px;
+}

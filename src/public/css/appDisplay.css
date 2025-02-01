@@ -1,0 +1,33 @@
+.appDisplay {
+    display: flex;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+    opacity: 1.0;
+    backdrop-filter: blur(10px);
+    height: 40vh;
+    width: 50vw;
+}
+
+.appIcon {
+    width: 100px;
+    height: 100px;
+    cursor: pointer
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+img.move {
+    animation: moveRight 1s forwards;
+}
