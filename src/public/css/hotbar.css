@@ -1,12 +1,28 @@
-
 #hotbar {
     border-radius: 5px;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    padding: 25px;
+    padding: 15px;
     opacity: 1.0;
     backdrop-filter: blur(10px);
-    display: none;
+    margin: 0 auto;
+    align-self: start;
+}
+
+@keyframes hotbarIn {
+    from {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.hotbarIn {
+    animation: hotbarIn 1s;
 }

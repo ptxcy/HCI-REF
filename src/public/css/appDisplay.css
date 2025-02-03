@@ -1,33 +1,39 @@
 .appDisplay {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    padding: 25px;
-    opacity: 1.0;
     backdrop-filter: blur(10px);
-    height: 40vh;
-    width: 50vw;
+
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+    margin: auto;
 }
 
 .appIcon {
     width: 100px;
     height: 100px;
-    cursor: pointer
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-@keyframes moveRight {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    to {
-        transform: translateX(100px);
-        opacity: 0;
-    }
+.appIconHotBar {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
-img.move {
-    animation: moveRight 1s forwards;
+.appIconPlacholder {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 8px;
 }

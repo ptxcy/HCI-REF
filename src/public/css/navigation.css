@@ -1,12 +1,12 @@
 .arrow-container {
-    position: fixed; 
+    position: fixed;
     top: 50%;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     backdrop-filter: blur(2px);
 }
@@ -32,4 +32,65 @@
 .arrow {
     width: 25px;
     height: 25px;
+}
+
+
+@keyframes appDisplayFromLeft {
+    from {
+        transform: translateX(-200vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appDisplayFromRight {
+    from {
+        transform: translateX(200vw);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.appDisplayFromLeft {
+    animation: appDisplayFromLeft 0.5s;
+    transform: translateX(0);
+}
+
+.appDisplayFromRight {
+    animation: appDisplayFromRight 0.5s;
+    transform: translateX(0);
+}
+
+@keyframes appDisplayToLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200vw);
+    }
+}
+
+@keyframes appDisplayToRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200vw);
+    }
+}
+
+.appDisplayToLeft {
+    animation: appDisplayToLeft 0.5s;
+    transform: translateX(-200vw);
+}
+
+.appDisplayToRight {
+    animation: appDisplayToRight 0.5s;
+    transform: translateX(200vw);
 }

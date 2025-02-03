@@ -1,18 +1,24 @@
-.topDiv{
+.topDiv {
     display: flex;
     justify-content: center;
-    height: 25vh;
+    flex-direction: row;
+    height: 25%;
+    width: 100%;
 }
 
-.middleDiv{
+.middleDiv {
     display: flex;
     justify-content: center;
-    flex-direction: row; 
-    height: 50vh;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
 }
 
-.downDiv{
+.downDiv {
     display: flex;
     justify-content: center;
-    height: 25vh;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 25%;
+    width: 100%;
 }
