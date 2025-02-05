@@ -15,20 +15,22 @@
 
     padding: 25px;
     margin: auto;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .appIcon {
     width: 100px;
     height: 100px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .appIconHotBar {
     width: 75px;
     height: 75px;
     cursor: pointer;
-    border-radius: 8px;
 }
 
 .appIconPlacholder {
@@ -37,3 +39,4 @@
     cursor: pointer;
     border-radius: 8px;
 }
+

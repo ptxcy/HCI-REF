@@ -30,11 +30,17 @@ function newPageAdjustments() {
         }
         else if (currentApp == "TrackIt") {
             document.body.style.backgroundImage = 'url("/images/trackItBackground.png")';
-            console.log("TrackIt");
         }
     }
     else {
         document.body.style.backgroundImage = 'url("/images/background.jpeg")';
+    }
+
+    if (currentApp == "TrackIt") {
+        document.styleSheets[5].cssRules[0].style.display = "";
+    }
+    else {
+        document.styleSheets[5].cssRules[0].style.display = "none";
     }
 }
 
