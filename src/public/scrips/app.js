@@ -12,5 +12,6 @@ function openApp(name) {
     if (currentPage == 1) {
         rightNav();
     }
+    fixCurrentPage();
     console.log(currentPage);
 }

@@ -1,0 +1,14 @@
+.musicUi {
+    width: 300px;
+    padding: 0px 30px;
+}
+
+.musicUi.icon {
+    width: 70px;
+}
+
+#volumeSlider {
+    height: 60px;
+    vertical-align: center;
+    width: 100px;
+}

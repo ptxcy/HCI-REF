@@ -10,7 +10,7 @@ let hotbarOpen = false;
 hotbar.style.display = "none";
 let pages = ["selection", "clear", "app"];
 let currentPage = 1;
-let currentApp = "";
+let currentApp = "TrackIt";
 fixCurrentPage();
 
 function fixCurrentPage() {
@@ -26,22 +26,22 @@ function fixCurrentPage() {
 function newPageAdjustments() {
     if (currentPage == 2) {
         if (currentApp == "weTouri") {
-            // document.body.style.backgroundImage = 'url("/images/weTouriBackground.png")';
+            document.body.style.backgroundImage = 'url("/images/weTouriBackground.png")';
         }
         else if (currentApp == "TrackIt") {
             document.body.style.backgroundImage = 'url("/images/trackItBackground.png")';
+        }
+        else {
+            document.body.style.backgroundImage = 'url("/images/background.jpeg")';
         }
     }
     else {
         document.body.style.backgroundImage = 'url("/images/background.jpeg")';
     }
 
-    if (currentApp == "TrackIt") {
-        document.styleSheets[5].cssRules[0].style.display = "";
-    }
-    else {
-        document.styleSheets[5].cssRules[0].style.display = "none";
-    }
+    document.styleSheets[5].cssRules[0].style.display = currentApp == "TrackIt" ? "" : "none";
+    document.styleSheets[6].cssRules[0].style.display = currentApp == "health" ? "" : "none";
+    document.styleSheets[7].cssRules[0].style.display = currentApp == "soundtracks" ? "" : "none";
 }
 
 function setAppDisplayAnimation(element, animation) {

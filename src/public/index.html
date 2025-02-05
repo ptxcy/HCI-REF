@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/hotbar.css">
     <link rel="stylesheet" href="css/globalDivs.css">
     <link rel="stylesheet" href="css/trackit.css">
+    <link rel="stylesheet" href="css/healthApp.css">
+    <link rel="stylesheet" href="css/music.css">
 </head>
 
 <body>
@@ -20,10 +22,9 @@
         <div id="hotbar">
             <img src="/images/TrackIt.png" alt="Moving Image" class="appIconHotBar TrackIt appIcon">
             <img src="/images/weTouri.png" alt="Moving Image" class="appIconHotBar weTouri appIcon">
-            <img src="/images/TrackIt.png" alt="Moving Image" class="appIconHotBar TrackIt appIcon">
-            <img src="/images/weTouri.png" alt="Moving Image" class="appIconHotBar weTouri appIcon">
-            <img src="/images/TrackIt.png" alt="Moving Image" class="appIconHotBar TrackIt appIcon">
-            <img src="/images/weTouri.png" alt="Moving Image" class="appIconHotBar weTouri appIcon">
+            <img src="/images/HeartAppIcon.png" alt="Moving Image" class="appIconHotBar health appIcon">
+            <img src="/images/SoundtracksIcon.png" alt="Moving Image" class="appIconHotBar soundtracks appIcon">
+            <img src="/images/NotesApp.png" alt="Moving Image" class="appIconHotBar notes appIcon">
         </div>
     </div>
 
@@ -70,10 +71,22 @@
             <img src="/images/tempo.png" alt="TrackItUi" class="trackItUi">
             <img src="/images/pfeil.png" alt="TrackItUi" class="trackItUi">
             <img src="/images/Straßenname.png" alt="TrackItUi" class="trackItUi">
+
+            <img src="/images/pulse.png" alt="Pulse" class="healthAppUi">
+            <img src="/images/calories.png" alt="Calories" class="healthAppUi">
+            <img src="/images/distance.png" alt="Calories" class="healthAppUi">
+
+            <img src="/images/music.png" alt="music" class="musicUi">
+            <img src="/images/play.png" alt="play" class="musicUi icon" id="playButton">
+            <img src="/images/pause.png" alt="pause" class="musicUi icon" id="pauseButton">
+            <img src="/images/mute.png" alt="mute" class="musicUi icon" id="muteButton">
+            <img src="/images/unmute.png" alt="unmute" class="musicUi icon" id="unmuteButton">
+            <input type="range" min="0" max="100" value="50" class="musicUi" id="volumeSlider">
         </div>
     </div>
     <script src="scrips/navigation.js"></script>
     <script src="scrips/app.js"></script>
+    <script src="scrips/soundtracks.js"></script>
 </body>
 
 </html>
