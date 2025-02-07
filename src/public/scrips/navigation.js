@@ -96,8 +96,3 @@ function topNav() {
 arrowRight.addEventListener('click', rightNav);
 arrowLeft.addEventListener('click', leftNav);
 arrowTop.addEventListener('click', topNav);
-hotbar.addEventListener('click', function () {
-    hotbar.style.display = "none";
-    hotbar.classList.remove('hotbarIn');
-    arrowTop.style.display = "flex";
-});
