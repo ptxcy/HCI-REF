@@ -8,6 +8,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 hotbar.addEventListener('click', function (e) {
+	if (e.target.className != "hotbarIn") return;
     if (e.detail == 1) {
     	if (dragstart) {
     		offset = {
