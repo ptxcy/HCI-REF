@@ -1,4 +1,26 @@
 .trackItUi {
-    width: 5vw;
+    height: 5vw;
     display: none;
+}
+
+#trackItPfeil {
+    height: 4.8vw;
+    transform: scaleX(-1);
+}
+
+.trackItUi.straßenname {
+    top: 20px;
+    left: 20px;
+    height: 2vw;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.trackItUiContainer {
+    background-color: rgba(255, 250, 240, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 10px 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }

@@ -6,6 +6,14 @@
     width: 100%;
 }
 
+.topLeftDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #005A8C;
+    border-radius: 50px;
+}
+
 .middleDiv {
     display: flex;
     justify-content: center;

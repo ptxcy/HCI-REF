@@ -5,6 +5,7 @@ const appDisplay = document.getElementsByClassName('app')[0];
 const arrowRight = document.getElementsByClassName('arrow-container right')[0];
 const arrowLeft = document.getElementsByClassName('arrow-container left')[0];
 const arrowTop = document.getElementsByClassName('arrow-container up')[0];
+const topLeftDiv = document.getElementsByClassName("topLeftDiv")[0];
 
 let hotbarOpen = false;
 hotbar.style.display = "none";
@@ -40,8 +41,11 @@ function newPageAdjustments() {
     }
 
     document.styleSheets[5].cssRules[0].style.display = currentApp == "TrackIt" ? "" : "none";
+    topLeftDiv.style.display = currentApp == "TrackIt" ? "" : "none";
+    document.styleSheets[5].cssRules[3].style.display = currentApp != "weTouri" ? "" : "none";
     document.styleSheets[6].cssRules[0].style.display = currentApp == "health" ? "" : "none";
     document.styleSheets[7].cssRules[0].style.display = currentApp == "soundtracks" ? "" : "none";
+    document.styleSheets[8].cssRules[0].style.display = currentApp == "notes" ? "" : "none";
 }
 
 function setAppDisplayAnimation(element, animation) {
@@ -58,6 +62,7 @@ function rightNav() {
     }
     if (currentPage == 2) {
         setAppDisplayAnimation(appDisplay, 'appDisplayToLeft');
+        setAppDisplayAnimation(topLeftDiv, 'appDisplayToLeft');
     }
     currentPage++;
     fixCurrentPage();
@@ -66,6 +71,7 @@ function rightNav() {
     }
     if (currentPage == 2) {
         setAppDisplayAnimation(appDisplay, 'appDisplayFromRight');
+        setAppDisplayAnimation(topLeftDiv, 'appDisplayFromRight');
     }
 }
 
@@ -75,6 +81,7 @@ function leftNav() {
     }
     if (currentPage == 2) {
         setAppDisplayAnimation(appDisplay, 'appDisplayToRight');
+        setAppDisplayAnimation(topLeftDiv, 'appDisplayToRight');
     }
     currentPage--;
     fixCurrentPage();
@@ -83,6 +90,7 @@ function leftNav() {
     }
     if (currentPage == 2) {
         setAppDisplayAnimation(appDisplay, 'appDisplayFromLeft');
+        setAppDisplayAnimation(topLeftDiv, 'appDisplayFromLeft');
     }
 }
 
